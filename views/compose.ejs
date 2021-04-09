@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+	<h1>Compose</h1>
+	<form action="/compose" method="post">
+		<div class="form-group">
+			<strong><label>Title</label></strong>
+			<input type="text" class="form-control" placeholder="New Tweet" name = "title" autocomplete="off">
+			<strong><label>Post</label></strong>
+			<textarea class="form-control" name="tweet" row="8"></textarea>
+		</div>
+		<button type="submit" class="btn btn-primary btn-sm">Publish</button>
+	</form>
+<%- include("partials/footer"); -%>
